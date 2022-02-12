@@ -9,6 +9,8 @@
 }
 .list {
   list-style: none;
+  padding: 0px;
+  margin: 0px;
 }
 .link {
   text-decoration: none;
@@ -28,6 +30,7 @@
 }
 
 .btn {
+  display: block;
   cursor: pointer;
 }
 
@@ -82,11 +85,9 @@ img {
 /*========END COMPONENTS========*/
 /*========START HEADER========*/
 
-.header {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
 .logo {
+  padding-top: 35px;
+  padding-bottom: 35px;
   margin-right: 93px;
   font-family: var(--secondary-font-family);
   font-size: 26px;
@@ -97,6 +98,10 @@ img {
 
 .part-logo {
   color: var(--main-color);
+}
+
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .contacts-link {
@@ -113,6 +118,8 @@ img {
   align-items: center;
 }
 .nav-list {
+  padding-top: 35px;
+  padding-bottom: 35px;
   display: flex;
   align-items: center;
   font-family: var(--primary-font-family);
@@ -127,6 +134,10 @@ img {
 .nav-list-item:not(:last-child) {
   margin-right: 50px;
 }
+.nav-list-item .link {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
 
 .contacts {
   display: flex;
@@ -139,44 +150,47 @@ img {
   color: var(--secondary-text-color);
 }
 
+.contacts-link {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
 /*========END HEADER========*/
 /*========START HERO========*/
 .hero {
   background: #2f303a;
-  height: 600px;
+  padding-bottom: 210px;
 }
 
 .title {
   padding-top: 200px;
-  padding-bottom: 280px;
-  padding-right: 452px;
-  padding-left: 452px;
+  margin-bottom: 30px;
   font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
+  text-align: center;
   color: var(--third-text-color);
 }
 
 .hero-button {
+  margin: 0 auto;
+  border: none;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 32px;
+  padding-left: 32px;
   border-radius: 4px;
   font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
+  display: block;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--third-text-color);
   background: var(--accent-color);
@@ -188,10 +202,22 @@ img {
 
 /*========END HERO========*/
 /*========1 SECTION START========*/
+.section-qualities {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
 .header-section-qualities {
   display: none;
 }
-
+.qualities-head-list {
+  margin-bottom: 10px;
+}
+.qualities-list {
+  display: flex;
+}
+.qualities-list-item:not(:last-child) {
+  padding-right: 30px;
+}
 .qualities-head-list {
   font-family: var(--primary-font-family);
   font-style: normal;
@@ -217,31 +243,58 @@ img {
 }
 /*========1 SECTION END========*/
 /*========2 SECTION START========*/
+.section-services {
+  padding-bottom: 188px;
+}
 .header-section {
+  padding-bottom: 50px;
   font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-
+  text-align: center;
   color: var(--main-color);
 }
+.services-list {
+  display: flex;
+}
+.services-list-item:not(:last-child) {
+  padding-right: 30px;
+}
+
 /*========2 SECTION END========*/
 /*========3 SECTION START========*/
 .section-team {
   background: #f5f4fa;
+  padding-bottom: 94px;
+}
+.header-section {
+  padding-bottom: 50px;
+}
+.team-list {
+  display: flex;
+}
+
+.team-list-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-img {
+  padding-bottom: 30px;
 }
 .names {
+  padding-bottom: 10px;
   font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-
   text-align: center;
   letter-spacing: 0.03em;
-
   color: var(--main-color);
 }
 
@@ -300,6 +353,11 @@ img {
 /*========FOOTER START========*/
 .footer {
   background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-address {
+  padding-top: 20px;
 }
 .address-list-location {
   font-family: var(--primary-font-family);
@@ -314,6 +372,9 @@ img {
   color: var(--third-text-color);
 }
 .address-list-item {
+  padding-bottom: 10px;
+}
+.address-list-text {
   font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: normal;
