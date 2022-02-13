@@ -203,6 +203,7 @@ img {
 /*========END HERO========*/
 /*========1 SECTION START========*/
 .section-qualities {
+  background: #e5e5e5;
   padding-bottom: 94px;
   padding-top: 94px;
 }
@@ -244,6 +245,7 @@ img {
 /*========1 SECTION END========*/
 /*========2 SECTION START========*/
 .section-services {
+  background: #e5e5e5;
   padding-bottom: 188px;
 }
 .header-section {
@@ -275,6 +277,7 @@ img {
 }
 .team-list {
   display: flex;
+  justify-content: space-between;
 }
 
 .team-list-item {
@@ -299,6 +302,7 @@ img {
 }
 
 .position {
+  padding-bottom: 30px;
   font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: normal;
@@ -311,11 +315,32 @@ img {
 }
 /*========3 SECTION END========*/
 /*========PORTFOLIO START========*/
+.section-projects {
+  background: #e5e5e5;
+}
 .main-header-projects {
   display: none;
 }
 
+.filters-list {
+  display: flex;
+  justify-content: center;
+  padding-right: 30px;
+}
+
+.filters-list-item:not(:last-child) {
+  padding-right: 30px;
+}
 .filters-btn {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 22px;
+  padding-left: 22px;
+  background: #f5f4fa;
+  border: none;
+  border-radius: 4px;
   font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: 500;
@@ -327,10 +352,29 @@ img {
 }
 .filters-btn:hover,
 .filters-btn:focus {
-  background: #2196f3;
+  background: var(--accent-color);
+  color: var(--third-text-color);
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-list-item {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+.projects-img {
+  padding-bottom: 20px;
 }
 
 .header-projects {
+  padding-left: 24px;
+  padding-right: 24px;
   font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: bold;
@@ -341,6 +385,9 @@ img {
 }
 
 .projects-text {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 50px;
   font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: normal;
