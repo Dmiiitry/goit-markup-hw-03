@@ -85,6 +85,10 @@ img {
 /*========END COMPONENTS========*/
 /*========START HEADER========*/
 
+.header {
+  border: 1px solid #ececec;
+}
+
 .logo {
   padding-top: 35px;
   padding-bottom: 35px;
