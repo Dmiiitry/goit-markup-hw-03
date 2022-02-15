@@ -86,7 +86,7 @@ img {
 /*========START HEADER========*/
 
 .header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -248,11 +248,9 @@ img {
 }
 /*========1 SECTION END========*/
 /*========2 SECTION START========*/
-.section-services {
-  padding-bottom: 94px;
-}
+
 .header-section {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: bold;
@@ -276,9 +274,7 @@ img {
   background: #f5f4fa;
   padding-bottom: 94px;
 }
-.header-section {
-  padding-bottom: 50px;
-}
+
 .team-list {
   display: flex;
 }
@@ -329,7 +325,7 @@ img {
 }
 
 .filters-list {
-  margin-bottom: 56px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   padding-right: 30px;
@@ -364,20 +360,18 @@ img {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
+
 .projects-list-item {
+  margin-top: 30px;
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
 }
-.projects-list-position {
-  padding-right: 30px;
-  padding-bottom: 30px;
-}
 
-.projects-list-position:not(:last-child) {
-  padding-right: 30px;
-  padding-bottom: 30px;
+.projects-list-position {
+  padding-bottom: 20px;
 }
 
 .projects-img {
@@ -398,8 +392,6 @@ img {
 
 .projects-text {
   padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 50px;
   font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: normal;
