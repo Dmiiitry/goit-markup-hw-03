@@ -250,7 +250,7 @@ img {
 /*========2 SECTION START========*/
 
 .header-section {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: bold;
@@ -325,7 +325,7 @@ img {
 }
 
 .filters-list {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   padding-right: 30px;
@@ -358,16 +358,23 @@ img {
 }
 
 .projects-list {
+  margin-right: -30px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .projects-list-item {
-  margin-top: 30px;
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
+}
+
+.projects-list-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.projects-list-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
 }
 
 .projects-list-position {
@@ -375,6 +382,7 @@ img {
 }
 
 .projects-img {
+  width: 370px;
   padding-bottom: 20px;
 }
 
